@@ -34,7 +34,7 @@ export const getServerSideProps = async () => {
     const fetchBusinessData = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:3000/demo.json'
+          'https://myphotosite-portfolio.netlify.app/demo.json'
         );
         // console.log('Data fetched:', response.data);
         return response.data.docs[0];
